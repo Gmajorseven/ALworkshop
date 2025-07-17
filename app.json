@@ -1,0 +1,28 @@
+{
+  "id": "a5d78a32-8f1d-4f3b-975e-5cd85e36f6e3",
+  "name": "ALworkshop",
+  "publisher": "Default Publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "15.4.41023.43755",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "showMyCode": true,
+  "runtime": "4.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
