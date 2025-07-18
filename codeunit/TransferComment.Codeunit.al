@@ -1,7 +1,7 @@
 codeunit 50100 TransferComment
 {
 
-    [EventSubscriber(ObjectType::Table, Database::"Sales Line", 'OnAfterInitFromSalesHeader', '', false, false)]
+    [EventSubscriber(ObjectType::Table, Database::"Sales Line", 'OnAfterInitHeaderDefaults', '', false, false)]
     local procedure CopyCustomerComments(var SalesLine: Record "Sales Line"; SalesHeader: Record "Sales Header")
     var
         Customer: Record Customer;
@@ -12,7 +12,7 @@ codeunit 50100 TransferComment
         end;
     end;
 
-    [EventSubscriber(ObjectType::Table, Database::"Purchase Line", 'OnAfterInitFromPurchHeader', '', false, false)]
+    [EventSubscriber(ObjectType::Table, Database::"Purchase Line", 'OnAfterInitHeaderDefaults', '', false, false)]
     local procedure CopyVendorComments(var PurchLine: Record "Purchase Line"; PurchHeader: Record "Purchase Header")
     var
         Vendor: Record Vendor;
